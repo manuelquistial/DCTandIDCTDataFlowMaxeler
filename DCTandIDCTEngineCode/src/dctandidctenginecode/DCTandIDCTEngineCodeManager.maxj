@@ -1,0 +1,29 @@
+package dctandidctenginecode;
+
+import com.maxeler.maxcompiler.v2.build.EngineParameters;
+import com.maxeler.maxcompiler.v2.managers.custom.DFELink;
+import com.maxeler.maxcompiler.v2.managers.custom.blocks.KernelBlock;
+import com.maxeler.platform.max5.manager.MAX5CManager;
+
+public class DCTandIDCTEngineCodeManager extends MAX5CManager {
+
+	public static final String kernelName = "DCTandIDCTEngineCodeKernel";
+
+	public DCTandIDCTEngineCodeManager(EngineParameters params) {
+		super(params);
+
+		final KernelBlock kernel = addKernel(new DCTandIDCTEngineCodeKernel(makeKernelParameters(kernelName)));
+		final DFELink x = addStreamFromCPU("x");
+		kernel.getInput("x") <== x;
+
+		final DFELink y = addStreamToCPU("y");
+		y <== kernel.getOutput("y");
+	}
+
+	public static void main(final String[] argv) {
+		final EngineParameters params = new EngineParameters(argv);
+		final DCTandIDCTEngineCodeManager manager = new DCTandIDCTEngineCodeManager(params);
+		manager.build();
+	}
+
+}

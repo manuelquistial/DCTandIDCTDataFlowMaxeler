@@ -1,0 +1,31 @@
+package com.prueba;
+
+import com.maxeler.maxcompiler.v2.build.EngineParameters;
+import com.maxeler.maxcompiler.v2.managers.custom.DFELink;
+import com.maxeler.maxcompiler.v2.managers.custom.blocks.KernelBlock;
+import com.maxeler.platform.max5.manager.MAX5CManager;
+
+public class pruebamaxManager extends MAX5CManager {
+
+	public static final String kernelName = "pruebamaxKernel";
+
+	public pruebamaxManager(EngineParameters params) {
+		super(params);
+
+		final KernelBlock kernel = addKernel(new pruebamaxKernel(makeKernelParameters(kernelName)));
+		final DFELink x = addStreamFromCPU("x");
+		final DFELink y = addStreamFromCPU("y");
+		kernel.getInput("y") <== y;
+		kernel.getInput("x") <== x;
+
+		final DFELink s = addStreamToCPU("s");
+		s <== kernel.getOutput("s");
+	}
+
+	public static void main(final String[] argv) {
+		final EngineParameters params = new EngineParameters(argv);
+		final pruebamaxManager manager = new pruebamaxManager(params);
+		manager.build();
+	}
+
+}

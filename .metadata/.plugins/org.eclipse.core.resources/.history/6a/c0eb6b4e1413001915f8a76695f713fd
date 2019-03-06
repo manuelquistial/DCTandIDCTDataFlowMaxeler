@@ -1,0 +1,22 @@
+package com.prueba;
+
+import com.maxeler.maxcompiler.v2.kernelcompiler.Kernel;
+import com.maxeler.maxcompiler.v2.kernelcompiler.KernelParameters;
+import com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar;
+
+public class pruebamaxKernel extends Kernel {
+
+	public pruebamaxKernel(final KernelParameters parameters) {
+		super(parameters);
+
+		// Input
+		final DFEVar x = io.input("x", dfeInt(32));
+		final DFEVar prev = stream.offset(x, -1);
+		final DFEVar next = stream.offset(x, 1);
+		final DFEVar sum = prev + x + next;
+		final DFEVar y = sum/3;
+		// Output
+		io.output("y",y, dfeInt(32));
+	}
+
+}

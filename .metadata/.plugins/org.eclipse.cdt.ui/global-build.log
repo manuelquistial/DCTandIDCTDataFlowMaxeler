@@ -1,0 +1,461 @@
+04:56:40 **** Clean-only build of configuration prueba Configuration for project prueba ****
+make clean 
+Cannot run program "make": Unknown reason
+05:00:17 **** Build of configuration pruebacpu Configuration for project pruebacpu ****
+make all 
+Cannot run program "make": Unknown reason
+05:00:21 **** Incremental Build of configuration pruebacpu Configuration for project pruebacpu ****
+make all 
+Cannot run program "make": Unknown reason
+05:04:41 **** Incremental Build of configuration pruebacpu Configuration for project pruebacpu ****
+make all 
+Cannot run program "make": Unknown reason
+18:59:31 **** Incremental Build of configuration pruebacpu Configuration for project pruebacpu ****
+make all 
+make[1]: Entering directory `/home/maxeler/workspace/pruebacpu'
+Terminating MaxelerOS daemon (PID 10470)...
+MaxelerOS daemon killed
+Terminating simulated system (PID 10467)...
+Simulated system killed
+
+Simulated system 'maxelerpruebacpuSim' started:
+    Board:                   MAX5C (default: 48GB RAM)
+    RAM size for simulation: 51539607552 bytes.
+    Temporary RAM file in    /tmp/. (Use option -k to preserve it.)
+    Simulation log:          /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate.log
+    Daemon log:              /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate_daemon.log
+
+Simulated devices available:
+    maxelerpruebacpuSim0:maxelerpruebacpuSim
+
+To use simulated devices you need to set the environment variables
+LD_PRELOAD and MAXELEROSDIR. As LD_PRELOAD must not contain spaces,
+you might need to set LD_LIBRARY_PATH in addition (see the MaxCompiler
+tutorial for details).  Also, ensure that you add the correct simulated
+system name (namely "maxelerpruebacpuSim") to your SLiC configuration. The following
+examples assume there are no spaces in LD_PRELOAD or SLIC_CONF.
+Example for BASH:
+    export MAXELEROSDIR=$MAXCOMPILERDIR/lib/maxeleros-sim
+    export LD_PRELOAD=$MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    export SLIC_CONF="$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+Example for CSH:
+    setenv MAXELEROSDIR $MAXCOMPILERDIR/lib/maxeleros-sim
+    setenv LD_PRELOAD $MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    setenv SLIC_CONF "$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+
+"/opt/maxeler/maxcompiler/bin/sliccompile" "../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" obj/max/pruebamax.o
+Processing maxfile for MAX5_LIMA_SIM from '../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max'.
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/dev/null" -DSLIC_NO_DESTRUCTORS -c /tmp/sliccompile_7629802542466210333/cobject/max_1633573162980049664.c -o /tmp/sliccompile_7629802542466210333/cobject/max_1633573162980049664.c.o 
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/home/maxeler/workspace/pruebacpu/../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" -DSLIC_NO_DESTRUCTORS -c /opt/maxeler/maxcompiler/src/slicinterface/MaxFileInit.c -o max_2988564097538939673.o 
+ld -r /tmp/sliccompile_7629802542466210333/cobject/max_1633573162980049664.c.o max_2988564097538939673.o -o pruebamax.o 
+Copying .max file C object into '/home/maxeler/workspace/pruebacpu/obj/max'
+gcc -o bin/pruebacpu  obj/src/pruebacpu.o  obj/max/pruebamax.o -fPIC -std=gnu99 -Wall -Wextra -Iinc/max -I. -I/opt/maxeler/maxcompiler/lib/maxeleros-sim/include -I/opt/maxeler/maxcompiler/include/slic  -I/usr/include/c++/4.8.5 -I/usr/include/c++/4.8.5/x86_64-redhat-linux -I/usr/include/c++/4.8.5/backward -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -Iinc -I/opt/maxeler/maxcompiler/include/slic   -L/opt/maxeler/maxcompiler/lib -L/opt/maxeler/maxcompiler/lib/maxeleros-sim/lib -lslic -lmaxeleros -lm -lpthread -lcurl
+SLiC Error #128 @ pcie_streams_internal.c:112 - Unable to allocate data for pcie stream
+SLiC Error #518 @ stream.c:29 - Error reported from function "max_queue_output".
+
+make[1]: *** [run] Aborted (core dumped)
+make: *** [run_sim] Error 2
+make[1]: Leaving directory `/home/maxeler/workspace/pruebacpu'
+19:01:50 **** Incremental Build of configuration pruebacpu Configuration for project pruebacpu ****
+make all 
+make[1]: Entering directory `/home/maxeler/workspace/pruebacpu'
+Terminating MaxelerOS daemon (PID 10642)...
+MaxelerOS daemon killed
+Terminating simulated system (PID 10639)...
+Simulated system killed
+
+Simulated system 'maxelerpruebacpuSim' started:
+    Board:                   MAX5C (default: 48GB RAM)
+    RAM size for simulation: 51539607552 bytes.
+    Temporary RAM file in    /tmp/. (Use option -k to preserve it.)
+    Simulation log:          /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate.log
+    Daemon log:              /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate_daemon.log
+
+Simulated devices available:
+    maxelerpruebacpuSim0:maxelerpruebacpuSim
+
+To use simulated devices you need to set the environment variables
+LD_PRELOAD and MAXELEROSDIR. As LD_PRELOAD must not contain spaces,
+you might need to set LD_LIBRARY_PATH in addition (see the MaxCompiler
+tutorial for details).  Also, ensure that you add the correct simulated
+system name (namely "maxelerpruebacpuSim") to your SLiC configuration. The following
+examples assume there are no spaces in LD_PRELOAD or SLIC_CONF.
+Example for BASH:
+    export MAXELEROSDIR=$MAXCOMPILERDIR/lib/maxeleros-sim
+    export LD_PRELOAD=$MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    export SLIC_CONF="$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+Example for CSH:
+    setenv MAXELEROSDIR $MAXCOMPILERDIR/lib/maxeleros-sim
+    setenv LD_PRELOAD $MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    setenv SLIC_CONF "$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+
+gcc -c -o obj/src/pruebacpu.o src/pruebacpu.c -fPIC -std=gnu99 -Wall -Wextra -Iinc/max -I. -I/opt/maxeler/maxcompiler/lib/maxeleros-sim/include -I/opt/maxeler/maxcompiler/include/slic  -I/usr/include/c++/4.8.5 -I/usr/include/c++/4.8.5/x86_64-redhat-linux -I/usr/include/c++/4.8.5/backward -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -Iinc -I/opt/maxeler/maxcompiler/include/slic
+"/opt/maxeler/maxcompiler/bin/sliccompile" "../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" obj/max/pruebamax.o
+Processing maxfile for MAX5_LIMA_SIM from '../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max'.
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/dev/null" -DSLIC_NO_DESTRUCTORS -c /tmp/sliccompile_4735980367218113664/cobject/max_5319683032053686765.c -o /tmp/sliccompile_4735980367218113664/cobject/max_5319683032053686765.c.o 
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/home/maxeler/workspace/pruebacpu/../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" -DSLIC_NO_DESTRUCTORS -c /opt/maxeler/maxcompiler/src/slicinterface/MaxFileInit.c -o max_175708522678144647.o 
+ld -r /tmp/sliccompile_4735980367218113664/cobject/max_5319683032053686765.c.o max_175708522678144647.o -o pruebamax.o 
+Copying .max file C object into '/home/maxeler/workspace/pruebacpu/obj/max'
+gcc -o bin/pruebacpu  obj/src/pruebacpu.o  obj/max/pruebamax.o -fPIC -std=gnu99 -Wall -Wextra -Iinc/max -I. -I/opt/maxeler/maxcompiler/lib/maxeleros-sim/include -I/opt/maxeler/maxcompiler/include/slic  -I/usr/include/c++/4.8.5 -I/usr/include/c++/4.8.5/x86_64-redhat-linux -I/usr/include/c++/4.8.5/backward -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -Iinc -I/opt/maxeler/maxcompiler/include/slic   -L/opt/maxeler/maxcompiler/lib -L/opt/maxeler/maxcompiler/lib/maxeleros-sim/lib -lslic -lmaxeleros -lm -lpthread -lcurl
+dataOut[0] = 2
+dataOut[1] = 0
+dataOut[2] = 4
+dataOut[3] = 0
+dataOut[4] = 8
+dataOut[5] = 2
+dataOut[6] = 16
+dataOut[7] = 6
+Test FAILED!
+make[1]: *** [run] Error 1
+make: *** [run_sim] Error 2
+make[1]: Leaving directory `/home/maxeler/workspace/pruebacpu'
+19:28:02 **** Clean-only build of configuration pruebacpu Configuration for project pruebacpu ****
+make clean 
+if [ -d "bin" ]; then rm -rf  bin; fi
+if [ -d "obj/max" ]; then rm -rf  obj/max; fi
+if [ -d "obj" ]; then rm -rf  obj; fi
+if [ -d "lib" ]; then rm -rf  lib; fi
+rm -rf *~ core*
+06:43:26 **** Incremental Build of configuration pruebacpu Configuration for project pruebacpu ****
+make all 
+make[1]: Entering directory `/home/maxeler/workspace/pruebacpu'
+
+Simulated system 'maxelerpruebacpuSim' started:
+    Board:                   MAX5C (default: 48GB RAM)
+    RAM size for simulation: 51539607552 bytes.
+    Temporary RAM file in    /tmp/. (Use option -k to preserve it.)
+    Simulation log:          /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate.log
+    Daemon log:              /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate_daemon.log
+
+Simulated devices available:
+    maxelerpruebacpuSim0:maxelerpruebacpuSim
+
+To use simulated devices you need to set the environment variables
+LD_PRELOAD and MAXELEROSDIR. As LD_PRELOAD must not contain spaces,
+you might need to set LD_LIBRARY_PATH in addition (see the MaxCompiler
+tutorial for details).  Also, ensure that you add the correct simulated
+system name (namely "maxelerpruebacpuSim") to your SLiC configuration. The following
+examples assume there are no spaces in LD_PRELOAD or SLIC_CONF.
+Example for BASH:
+    export MAXELEROSDIR=$MAXCOMPILERDIR/lib/maxeleros-sim
+    export LD_PRELOAD=$MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    export SLIC_CONF="$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+Example for CSH:
+    setenv MAXELEROSDIR $MAXCOMPILERDIR/lib/maxeleros-sim
+    setenv LD_PRELOAD $MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    setenv SLIC_CONF "$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+
+gcc -c -o obj/src/pruebacpu.o src/pruebacpu.c -fPIC -std=gnu99 -Wall -Wextra -Iinc/max -I. -I/opt/maxeler/maxcompiler/lib/maxeleros-sim/include -I/opt/maxeler/maxcompiler/include/slic  -I/usr/include/c++/4.8.5 -I/usr/include/c++/4.8.5/x86_64-redhat-linux -I/usr/include/c++/4.8.5/backward -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -Iinc -I/opt/maxeler/maxcompiler/include/slic
+"/opt/maxeler/maxcompiler/bin/sliccompile" "../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" obj/max/pruebamax.o
+Processing maxfile for MAX5_LIMA_SIM from '../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max'.
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/dev/null" -DSLIC_NO_DESTRUCTORS -c /tmp/sliccompile_2041438397806883233/cobject/max_6154736304174660392.c -o /tmp/sliccompile_2041438397806883233/cobject/max_6154736304174660392.c.o 
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/home/maxeler/workspace/pruebacpu/../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" -DSLIC_NO_DESTRUCTORS -c /opt/maxeler/maxcompiler/src/slicinterface/MaxFileInit.c -o max_1781182015216196605.o 
+ld -r /tmp/sliccompile_2041438397806883233/cobject/max_6154736304174660392.c.o max_1781182015216196605.o -o pruebamax.o 
+Copying .max file C object into '/home/maxeler/workspace/pruebacpu/obj/max'
+gcc -o bin/pruebacpu  obj/src/pruebacpu.o  obj/max/pruebamax.o -fPIC -std=gnu99 -Wall -Wextra -Iinc/max -I. -I/opt/maxeler/maxcompiler/lib/maxeleros-sim/include -I/opt/maxeler/maxcompiler/include/slic  -I/usr/include/c++/4.8.5 -I/usr/include/c++/4.8.5/x86_64-redhat-linux -I/usr/include/c++/4.8.5/backward -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -Iinc -I/opt/maxeler/maxcompiler/include/slic   -L/opt/maxeler/maxcompiler/lib -L/opt/maxeler/maxcompiler/lib/maxeleros-sim/lib -lslic -lmaxeleros -lm -lpthread -lcurl
+SLiC Error #128 @ pcie_streams_internal.c:112 - Unable to allocate data for pcie stream
+SLiC Error #518 @ stream.c:29 - Error reported from function "max_queue_output".
+
+make[1]: *** [run] Aborted (core dumped)
+make: *** [run_sim] Error 2
+make[1]: Leaving directory `/home/maxeler/workspace/pruebacpu'
+06:58:08 **** Incremental Build of configuration pruebacpu Configuration for project pruebacpu ****
+make all 
+make[1]: Entering directory `/home/maxeler/workspace/pruebacpu'
+
+Simulated system 'maxelerpruebacpuSim' started:
+    Board:                   MAX5C (default: 48GB RAM)
+    RAM size for simulation: 51539607552 bytes.
+    Temporary RAM file in    /tmp/. (Use option -k to preserve it.)
+    Simulation log:          /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate.log
+    Daemon log:              /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate_daemon.log
+
+Simulated devices available:
+    maxelerpruebacpuSim0:maxelerpruebacpuSim
+
+To use simulated devices you need to set the environment variables
+LD_PRELOAD and MAXELEROSDIR. As LD_PRELOAD must not contain spaces,
+you might need to set LD_LIBRARY_PATH in addition (see the MaxCompiler
+tutorial for details).  Also, ensure that you add the correct simulated
+system name (namely "maxelerpruebacpuSim") to your SLiC configuration. The following
+examples assume there are no spaces in LD_PRELOAD or SLIC_CONF.
+Example for BASH:
+    export MAXELEROSDIR=$MAXCOMPILERDIR/lib/maxeleros-sim
+    export LD_PRELOAD=$MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    export SLIC_CONF="$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+Example for CSH:
+    setenv MAXELEROSDIR $MAXCOMPILERDIR/lib/maxeleros-sim
+    setenv LD_PRELOAD $MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    setenv SLIC_CONF "$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+
+"/opt/maxeler/maxcompiler/bin/sliccompile" "../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" obj/max/pruebamax.o
+Processing maxfile for MAX5_LIMA_SIM from '../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max'.
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/dev/null" -DSLIC_NO_DESTRUCTORS -c /tmp/sliccompile_993981725741238901/cobject/max_5744877128303357990.c -o /tmp/sliccompile_993981725741238901/cobject/max_5744877128303357990.c.o 
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/home/maxeler/workspace/pruebacpu/../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" -DSLIC_NO_DESTRUCTORS -c /opt/maxeler/maxcompiler/src/slicinterface/MaxFileInit.c -o max_8645468902317785699.o 
+ld -r /tmp/sliccompile_993981725741238901/cobject/max_5744877128303357990.c.o max_8645468902317785699.o -o pruebamax.o 
+Copying .max file C object into '/home/maxeler/workspace/pruebacpu/obj/max'
+gcc -o bin/pruebacpu  obj/src/pruebacpu.o  obj/max/pruebamax.o -fPIC -std=gnu99 -Wall -Wextra -Iinc/max -I. -I/opt/maxeler/maxcompiler/lib/maxeleros-sim/include -I/opt/maxeler/maxcompiler/include/slic  -I/usr/include/c++/4.8.5 -I/usr/include/c++/4.8.5/x86_64-redhat-linux -I/usr/include/c++/4.8.5/backward -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -Iinc -I/opt/maxeler/maxcompiler/include/slic   -L/opt/maxeler/maxcompiler/lib -L/opt/maxeler/maxcompiler/lib/maxeleros-sim/lib -lslic -lmaxeleros -lm -lpthread -lcurl
+dataOut[0] = 0
+dataOut[1] = 0
+dataOut[2] = 0
+dataOut[3] = 0
+dataOut[4] = 0
+dataOut[5] = 0
+dataOut[6] = 0
+dataOut[7] = 0
+Test passed!
+Terminating MaxelerOS daemon (PID 6178)...
+MaxelerOS daemon killed
+Terminating simulated system (PID 6175)...
+Simulated system killed
+make[1]: Leaving directory `/home/maxeler/workspace/pruebacpu'
+07:05:43 **** Incremental Build of configuration pruebacpu Configuration for project pruebacpu ****
+make all 
+make[1]: Entering directory `/home/maxeler/workspace/pruebacpu'
+
+Simulated system 'maxelerpruebacpuSim' started:
+    Board:                   MAX5C (default: 48GB RAM)
+    RAM size for simulation: 51539607552 bytes.
+    Temporary RAM file in    /tmp/. (Use option -k to preserve it.)
+    Simulation log:          /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate.log
+    Daemon log:              /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate_daemon.log
+
+Simulated devices available:
+    maxelerpruebacpuSim0:maxelerpruebacpuSim
+
+To use simulated devices you need to set the environment variables
+LD_PRELOAD and MAXELEROSDIR. As LD_PRELOAD must not contain spaces,
+you might need to set LD_LIBRARY_PATH in addition (see the MaxCompiler
+tutorial for details).  Also, ensure that you add the correct simulated
+system name (namely "maxelerpruebacpuSim") to your SLiC configuration. The following
+examples assume there are no spaces in LD_PRELOAD or SLIC_CONF.
+Example for BASH:
+    export MAXELEROSDIR=$MAXCOMPILERDIR/lib/maxeleros-sim
+    export LD_PRELOAD=$MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    export SLIC_CONF="$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+Example for CSH:
+    setenv MAXELEROSDIR $MAXCOMPILERDIR/lib/maxeleros-sim
+    setenv LD_PRELOAD $MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    setenv SLIC_CONF "$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+
+"/opt/maxeler/maxcompiler/bin/sliccompile" "../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" obj/max/pruebamax.o
+Processing maxfile for MAX5_LIMA_SIM from '../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max'.
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/dev/null" -DSLIC_NO_DESTRUCTORS -c /tmp/sliccompile_2087357194546652999/cobject/max_4157231818041766154.c -o /tmp/sliccompile_2087357194546652999/cobject/max_4157231818041766154.c.o 
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/home/maxeler/workspace/pruebacpu/../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" -DSLIC_NO_DESTRUCTORS -c /opt/maxeler/maxcompiler/src/slicinterface/MaxFileInit.c -o max_4430760579573652346.o 
+ld -r /tmp/sliccompile_2087357194546652999/cobject/max_4157231818041766154.c.o max_4430760579573652346.o -o pruebamax.o 
+Copying .max file C object into '/home/maxeler/workspace/pruebacpu/obj/max'
+gcc -o bin/pruebacpu  obj/src/pruebacpu.o  obj/max/pruebamax.o -fPIC -std=gnu99 -Wall -Wextra -Iinc/max -I. -I/opt/maxeler/maxcompiler/lib/maxeleros-sim/include -I/opt/maxeler/maxcompiler/include/slic  -I/usr/include/c++/4.8.5 -I/usr/include/c++/4.8.5/x86_64-redhat-linux -I/usr/include/c++/4.8.5/backward -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -Iinc -I/opt/maxeler/maxcompiler/include/slic   -L/opt/maxeler/maxcompiler/lib -L/opt/maxeler/maxcompiler/lib/maxeleros-sim/lib -lslic -lmaxeleros -lm -lpthread -lcurl
+dataOut[0] = 0
+dataOut[1] = 0
+dataOut[2] = 0
+dataOut[3] = 0
+dataOut[4] = 0
+dataOut[5] = 0
+dataOut[6] = 0
+dataOut[7] = 0
+Test passed!
+Terminating MaxelerOS daemon (PID 6992)...
+MaxelerOS daemon killed
+Terminating simulated system (PID 6989)...
+Simulated system killed
+make[1]: Leaving directory `/home/maxeler/workspace/pruebacpu'
+07:06:29 **** Incremental Build of configuration pruebacpu Configuration for project pruebacpu ****
+make all 
+make[1]: Entering directory `/home/maxeler/workspace/pruebacpu'
+
+Simulated system 'maxelerpruebacpuSim' started:
+    Board:                   MAX5C (default: 48GB RAM)
+    RAM size for simulation: 51539607552 bytes.
+    Temporary RAM file in    /tmp/. (Use option -k to preserve it.)
+    Simulation log:          /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate.log
+    Daemon log:              /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate_daemon.log
+
+Simulated devices available:
+    maxelerpruebacpuSim0:maxelerpruebacpuSim
+
+To use simulated devices you need to set the environment variables
+LD_PRELOAD and MAXELEROSDIR. As LD_PRELOAD must not contain spaces,
+you might need to set LD_LIBRARY_PATH in addition (see the MaxCompiler
+tutorial for details).  Also, ensure that you add the correct simulated
+system name (namely "maxelerpruebacpuSim") to your SLiC configuration. The following
+examples assume there are no spaces in LD_PRELOAD or SLIC_CONF.
+Example for BASH:
+    export MAXELEROSDIR=$MAXCOMPILERDIR/lib/maxeleros-sim
+    export LD_PRELOAD=$MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    export SLIC_CONF="$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+Example for CSH:
+    setenv MAXELEROSDIR $MAXCOMPILERDIR/lib/maxeleros-sim
+    setenv LD_PRELOAD $MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    setenv SLIC_CONF "$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+
+"/opt/maxeler/maxcompiler/bin/sliccompile" "../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" obj/max/pruebamax.o
+Processing maxfile for MAX5_LIMA_SIM from '../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max'.
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/dev/null" -DSLIC_NO_DESTRUCTORS -c /tmp/sliccompile_3152433418096705110/cobject/max_5548347409426569649.c -o /tmp/sliccompile_3152433418096705110/cobject/max_5548347409426569649.c.o 
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/home/maxeler/workspace/pruebacpu/../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" -DSLIC_NO_DESTRUCTORS -c /opt/maxeler/maxcompiler/src/slicinterface/MaxFileInit.c -o max_3887868628082383504.o 
+ld -r /tmp/sliccompile_3152433418096705110/cobject/max_5548347409426569649.c.o max_3887868628082383504.o -o pruebamax.o 
+Copying .max file C object into '/home/maxeler/workspace/pruebacpu/obj/max'
+gcc -o bin/pruebacpu  obj/src/pruebacpu.o  obj/max/pruebamax.o -fPIC -std=gnu99 -Wall -Wextra -Iinc/max -I. -I/opt/maxeler/maxcompiler/lib/maxeleros-sim/include -I/opt/maxeler/maxcompiler/include/slic  -I/usr/include/c++/4.8.5 -I/usr/include/c++/4.8.5/x86_64-redhat-linux -I/usr/include/c++/4.8.5/backward -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -Iinc -I/opt/maxeler/maxcompiler/include/slic   -L/opt/maxeler/maxcompiler/lib -L/opt/maxeler/maxcompiler/lib/maxeleros-sim/lib -lslic -lmaxeleros -lm -lpthread -lcurl
+dataOut[0] = 0
+dataOut[1] = 0
+dataOut[2] = 0
+dataOut[3] = 0
+dataOut[4] = 0
+dataOut[5] = 0
+dataOut[6] = 0
+dataOut[7] = 0
+Test passed!
+Terminating MaxelerOS daemon (PID 7165)...
+MaxelerOS daemon killed
+Terminating simulated system (PID 7162)...
+Simulated system killed
+make[1]: Leaving directory `/home/maxeler/workspace/pruebacpu'
+07:09:18 **** Incremental Build of configuration pruebacpu Configuration for project pruebacpu ****
+make all 
+make[1]: Entering directory `/home/maxeler/workspace/pruebacpu'
+
+Simulated system 'maxelerpruebacpuSim' started:
+    Board:                   MAX5C (default: 48GB RAM)
+    RAM size for simulation: 51539607552 bytes.
+    Temporary RAM file in    /tmp/. (Use option -k to preserve it.)
+    Simulation log:          /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate.log
+    Daemon log:              /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate_daemon.log
+
+Simulated devices available:
+    maxelerpruebacpuSim0:maxelerpruebacpuSim
+
+To use simulated devices you need to set the environment variables
+LD_PRELOAD and MAXELEROSDIR. As LD_PRELOAD must not contain spaces,
+you might need to set LD_LIBRARY_PATH in addition (see the MaxCompiler
+tutorial for details).  Also, ensure that you add the correct simulated
+system name (namely "maxelerpruebacpuSim") to your SLiC configuration. The following
+examples assume there are no spaces in LD_PRELOAD or SLIC_CONF.
+Example for BASH:
+    export MAXELEROSDIR=$MAXCOMPILERDIR/lib/maxeleros-sim
+    export LD_PRELOAD=$MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    export SLIC_CONF="$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+Example for CSH:
+    setenv MAXELEROSDIR $MAXCOMPILERDIR/lib/maxeleros-sim
+    setenv LD_PRELOAD $MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    setenv SLIC_CONF "$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+
+"/opt/maxeler/maxcompiler/bin/sliccompile" "../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" obj/max/pruebamax.o
+Processing maxfile for MAX5_LIMA_SIM from '../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max'.
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/dev/null" -DSLIC_NO_DESTRUCTORS -c /tmp/sliccompile_8136419660223844043/cobject/max_8295405894865297131.c -o /tmp/sliccompile_8136419660223844043/cobject/max_8295405894865297131.c.o 
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/home/maxeler/workspace/pruebacpu/../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" -DSLIC_NO_DESTRUCTORS -c /opt/maxeler/maxcompiler/src/slicinterface/MaxFileInit.c -o max_8989933823740583819.o 
+ld -r /tmp/sliccompile_8136419660223844043/cobject/max_8295405894865297131.c.o max_8989933823740583819.o -o pruebamax.o 
+Copying .max file C object into '/home/maxeler/workspace/pruebacpu/obj/max'
+gcc -o bin/pruebacpu  obj/src/pruebacpu.o  obj/max/pruebamax.o -fPIC -std=gnu99 -Wall -Wextra -Iinc/max -I. -I/opt/maxeler/maxcompiler/lib/maxeleros-sim/include -I/opt/maxeler/maxcompiler/include/slic  -I/usr/include/c++/4.8.5 -I/usr/include/c++/4.8.5/x86_64-redhat-linux -I/usr/include/c++/4.8.5/backward -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -Iinc -I/opt/maxeler/maxcompiler/include/slic   -L/opt/maxeler/maxcompiler/lib -L/opt/maxeler/maxcompiler/lib/maxeleros-sim/lib -lslic -lmaxeleros -lm -lpthread -lcurl
+dataOut[0] = 0
+dataOut[1] = 0
+dataOut[2] = 0
+dataOut[3] = 0
+dataOut[4] = 0
+dataOut[5] = 0
+dataOut[6] = 0
+dataOut[7] = 0
+Test passed!
+Terminating MaxelerOS daemon (PID 7500)...
+MaxelerOS daemon killed
+Terminating simulated system (PID 7497)...
+Simulated system killed
+make[1]: Leaving directory `/home/maxeler/workspace/pruebacpu'
+07:09:51 **** Incremental Build of configuration pruebacpu Configuration for project pruebacpu ****
+make all 
+make[1]: Entering directory `/home/maxeler/workspace/pruebacpu'
+
+Simulated system 'maxelerpruebacpuSim' started:
+    Board:                   MAX5C (default: 48GB RAM)
+    RAM size for simulation: 51539607552 bytes.
+    Temporary RAM file in    /tmp/. (Use option -k to preserve it.)
+    Simulation log:          /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate.log
+    Daemon log:              /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate_daemon.log
+
+Simulated devices available:
+    maxelerpruebacpuSim0:maxelerpruebacpuSim
+
+To use simulated devices you need to set the environment variables
+LD_PRELOAD and MAXELEROSDIR. As LD_PRELOAD must not contain spaces,
+you might need to set LD_LIBRARY_PATH in addition (see the MaxCompiler
+tutorial for details).  Also, ensure that you add the correct simulated
+system name (namely "maxelerpruebacpuSim") to your SLiC configuration. The following
+examples assume there are no spaces in LD_PRELOAD or SLIC_CONF.
+Example for BASH:
+    export MAXELEROSDIR=$MAXCOMPILERDIR/lib/maxeleros-sim
+    export LD_PRELOAD=$MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    export SLIC_CONF="$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+Example for CSH:
+    setenv MAXELEROSDIR $MAXCOMPILERDIR/lib/maxeleros-sim
+    setenv LD_PRELOAD $MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    setenv SLIC_CONF "$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+
+"/opt/maxeler/maxcompiler/bin/sliccompile" "../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" obj/max/pruebamax.o
+Processing maxfile for MAX5_LIMA_SIM from '../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max'.
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/dev/null" -DSLIC_NO_DESTRUCTORS -c /tmp/sliccompile_6838249423016261577/cobject/max_1387885916887337508.c -o /tmp/sliccompile_6838249423016261577/cobject/max_1387885916887337508.c.o 
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/home/maxeler/workspace/pruebacpu/../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" -DSLIC_NO_DESTRUCTORS -c /opt/maxeler/maxcompiler/src/slicinterface/MaxFileInit.c -o max_4936115660910616178.o 
+ld -r /tmp/sliccompile_6838249423016261577/cobject/max_1387885916887337508.c.o max_4936115660910616178.o -o pruebamax.o 
+Copying .max file C object into '/home/maxeler/workspace/pruebacpu/obj/max'
+gcc -o bin/pruebacpu  obj/src/pruebacpu.o  obj/max/pruebamax.o -fPIC -std=gnu99 -Wall -Wextra -Iinc/max -I. -I/opt/maxeler/maxcompiler/lib/maxeleros-sim/include -I/opt/maxeler/maxcompiler/include/slic  -I/usr/include/c++/4.8.5 -I/usr/include/c++/4.8.5/x86_64-redhat-linux -I/usr/include/c++/4.8.5/backward -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -Iinc -I/opt/maxeler/maxcompiler/include/slic   -L/opt/maxeler/maxcompiler/lib -L/opt/maxeler/maxcompiler/lib/maxeleros-sim/lib -lslic -lmaxeleros -lm -lpthread -lcurl
+dataOut[0] = 0
+dataOut[1] = 0
+dataOut[2] = 0
+dataOut[3] = 0
+dataOut[4] = 0
+dataOut[5] = 0
+dataOut[6] = 0
+dataOut[7] = 0
+Test passed!
+Terminating MaxelerOS daemon (PID 7676)...
+MaxelerOS daemon killed
+Terminating simulated system (PID 7673)...
+Simulated system killed
+make[1]: Leaving directory `/home/maxeler/workspace/pruebacpu'
+07:10:30 **** Incremental Build of configuration pruebacpu Configuration for project pruebacpu ****
+make all 
+make[1]: Entering directory `/home/maxeler/workspace/pruebacpu'
+
+Simulated system 'maxelerpruebacpuSim' started:
+    Board:                   MAX5C (default: 48GB RAM)
+    RAM size for simulation: 51539607552 bytes.
+    Temporary RAM file in    /tmp/. (Use option -k to preserve it.)
+    Simulation log:          /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate.log
+    Daemon log:              /home/maxeler/.maxcompilersim/maxelerpruebacpuSim-MaxCompilerVMTemplate_daemon.log
+
+Simulated devices available:
+    maxelerpruebacpuSim0:maxelerpruebacpuSim
+
+To use simulated devices you need to set the environment variables
+LD_PRELOAD and MAXELEROSDIR. As LD_PRELOAD must not contain spaces,
+you might need to set LD_LIBRARY_PATH in addition (see the MaxCompiler
+tutorial for details).  Also, ensure that you add the correct simulated
+system name (namely "maxelerpruebacpuSim") to your SLiC configuration. The following
+examples assume there are no spaces in LD_PRELOAD or SLIC_CONF.
+Example for BASH:
+    export MAXELEROSDIR=$MAXCOMPILERDIR/lib/maxeleros-sim
+    export LD_PRELOAD=$MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    export SLIC_CONF="$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+Example for CSH:
+    setenv MAXELEROSDIR $MAXCOMPILERDIR/lib/maxeleros-sim
+    setenv LD_PRELOAD $MAXELEROSDIR/lib/libmaxeleros.so:$LD_PRELOAD
+    setenv SLIC_CONF "$SLIC_CONF;use_simulation=maxelerpruebacpuSim"
+
+"/opt/maxeler/maxcompiler/bin/sliccompile" "../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" obj/max/pruebamax.o
+Processing maxfile for MAX5_LIMA_SIM from '../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max'.
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/dev/null" -DSLIC_NO_DESTRUCTORS -c /tmp/sliccompile_1496324467784971965/cobject/max_490819385504429413.c -o /tmp/sliccompile_1496324467784971965/cobject/max_490819385504429413.c.o 
+/opt/maxeler/maxcompiler/lib/clang/bin/start.sh clang -fgnu89-inline -pipe -O0 -std=gnu99 -Wall -Werror -frandom-seed=foo -Wno-unused-variable -Wno-unused-function -fPIC -I /opt/maxeler/maxcompiler/include/slic -DMAXFILE_INC="/home/maxeler/workspace/pruebacpu/../pruebamax/builds/pruebamax/pruebamax_MAX5C_DFE_SIM/results/pruebamax.max" -DSLIC_NO_DESTRUCTORS -c /opt/maxeler/maxcompiler/src/slicinterface/MaxFileInit.c -o max_902644119061090093.o 
+ld -r /tmp/sliccompile_1496324467784971965/cobject/max_490819385504429413.c.o max_902644119061090093.o -o pruebamax.o 
+Copying .max file C object into '/home/maxeler/workspace/pruebacpu/obj/max'
+gcc -o bin/pruebacpu  obj/src/pruebacpu.o  obj/max/pruebamax.o -fPIC -std=gnu99 -Wall -Wextra -Iinc/max -I. -I/opt/maxeler/maxcompiler/lib/maxeleros-sim/include -I/opt/maxeler/maxcompiler/include/slic  -I/usr/include/c++/4.8.5 -I/usr/include/c++/4.8.5/x86_64-redhat-linux -I/usr/include/c++/4.8.5/backward -I/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include -I/usr/local/include -I/usr/include -Iinc -I/opt/maxeler/maxcompiler/include/slic   -L/opt/maxeler/maxcompiler/lib -L/opt/maxeler/maxcompiler/lib/maxeleros-sim/lib -lslic -lmaxeleros -lm -lpthread -lcurl
+dataOut[0] = 0
+dataOut[1] = 0
+dataOut[2] = 0
+dataOut[3] = 0
+dataOut[4] = 0
+dataOut[5] = 0
+dataOut[6] = 0
+dataOut[7] = 0
+Test passed!
+Terminating MaxelerOS daemon (PID 7877)...
+MaxelerOS daemon killed
+Terminating simulated system (PID 7874)...
+Simulated system killed
+make[1]: Leaving directory `/home/maxeler/workspace/pruebacpu'

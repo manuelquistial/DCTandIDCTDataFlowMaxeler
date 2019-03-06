@@ -1,0 +1,19 @@
+package p;
+
+import com.maxeler.maxcompiler.v2.kernelcompiler.Kernel;
+import com.maxeler.maxcompiler.v2.kernelcompiler.KernelParameters;
+import com.maxeler.maxcompiler.v2.kernelcompiler.types.base.DFEVar;
+
+public class proyectoUnoKernel extends Kernel {
+
+	public proyectoUnoKernel(final KernelParameters parameters) {
+		super(parameters);
+
+		// Input
+		final DFEVar x = io.input("x", dfeUInt(32));
+
+		// Output
+		io.output("y", x, dfeUInt(32));
+	}
+
+}

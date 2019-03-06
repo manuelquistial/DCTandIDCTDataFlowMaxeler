@@ -1,0 +1,6 @@
+04:56:40 **** Clean-only build of configuration prueba Configuration for project prueba ****
+make clean 
+Cannot run program "make": Unknown reason
+
+04:56:40 Build Finished (took 71ms)
+

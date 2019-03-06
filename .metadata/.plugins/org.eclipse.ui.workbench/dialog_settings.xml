@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="474" key="dialogHeight"/>
-		<item value="634" key="dialogWidth"/>
+		<item value="480" key="dialogHeight"/>
+		<item value="640" key="dialogWidth"/>
 		<list key="textEntries">
 		</list>
 		<list key="orderedElements">
@@ -10,6 +10,14 @@
 		<list key="orderedProviders">
 		</list>
 		<list key="textArray">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="ImportExportAction">
+		<item value="com.maxeler.maxide.wizards.importWizards.ConvertCPUSide" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="com.maxeler.maxide.wizards.ImportWizards"/>
 		</list>
 	</section>
 </section>

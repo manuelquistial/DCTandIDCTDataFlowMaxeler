@@ -5,3 +5,6 @@ if [ -d "obj/max" ]; then rm -rf  obj/max; fi
 if [ -d "obj" ]; then rm -rf  obj; fi
 if [ -d "lib" ]; then rm -rf  lib; fi
 rm -rf *~ core*
+
+04:21:19 Build Finished (took 1s.749ms)
+

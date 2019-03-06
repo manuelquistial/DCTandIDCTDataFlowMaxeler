@@ -1,218 +1,298 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+<?fileVersion 4.0.0?>
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
 		<cconfiguration id="com.maxeler.configuration.DCTandIDCTCpuCode">
-			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.maxeler.configuration.DCTandIDCTCpuCode" moduleId="org.eclipse.cdt.core.settings" name="DCTandIDCTCpuCode Configuration">
-				<externalSettings/>
+			<storageModule
+				buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider"
+				id="com.maxeler.configuration.DCTandIDCTCpuCode" moduleId="org.eclipse.cdt.core.settings"
+				name="DCTandIDCTCpuCode Configuration">
+				<externalSettings />
 				<extensions>
-					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
-					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser"
+						point="org.eclipse.cdt.core.ErrorParser" />
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser"
+						point="org.eclipse.cdt.core.ErrorParser" />
+					<extension id="org.eclipse.cdt.core.GLDErrorParser"
+						point="org.eclipse.cdt.core.ErrorParser" />
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser" />
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser" />
+					<extension id="org.eclipse.cdt.core.GCCErrorParser"
+						point="org.eclipse.cdt.core.ErrorParser" />
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration buildProperties="" description="" id="com.maxeler.configuration.DCTandIDCTCpuCode" name="DCTandIDCTCpuCode Configuration" parent="org.eclipse.cdt.build.core.prefbase.cfg">
-					<folderInfo id="com.maxeler.configuration.DCTandIDCTCpuCode." name="/" resourcePath="">
-						<toolChain id="org.eclipse.cdt.build.core.prefbase.toolchain.998649411" name="No ToolChain" resourceTypeBasedDiscovery="false" superClass="org.eclipse.cdt.build.core.prefbase.toolchain">
-							<targetPlatform id="org.eclipse.cdt.build.core.prefbase.toolchain.998649411.1092865678" name=""/>
-							<builder id="org.eclipse.cdt.build.core.settings.default.builder.1233055387" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
-							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.845414533" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
-							<tool id="org.eclipse.cdt.build.core.settings.holder.1948626356" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
-								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.2047893313" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
-									<listOptionValue builtIn="false" value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
-									<listOptionValue builtIn="false" value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
-									<listOptionValue builtIn="false" value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
-									<listOptionValue builtIn="false" value="/usr/local/include"/>
-									<listOptionValue builtIn="false" value="/usr/include"/>
-									<listOptionValue builtIn="false" value="../inc"/>
-									<listOptionValue builtIn="false" value="/opt/maxeler/maxcompiler/include/slic"/>
+				<configuration buildProperties="" description=""
+					id="com.maxeler.configuration.DCTandIDCTCpuCode" name="DCTandIDCTCpuCode Configuration"
+					parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="com.maxeler.configuration.DCTandIDCTCpuCode."
+						name="/" resourcePath="">
+						<toolChain
+							id="org.eclipse.cdt.build.core.prefbase.toolchain.998649411"
+							name="No ToolChain" resourceTypeBasedDiscovery="false"
+							superClass="org.eclipse.cdt.build.core.prefbase.toolchain">
+							<targetPlatform
+								id="org.eclipse.cdt.build.core.prefbase.toolchain.998649411.1092865678"
+								name="" />
+							<builder
+								id="org.eclipse.cdt.build.core.settings.default.builder.1233055387"
+								keepEnvironmentInBuildfile="false" managedBuildOn="false"
+								name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder" />
+							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.845414533"
+								name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs" />
+							<tool id="org.eclipse.cdt.build.core.settings.holder.1948626356"
+								name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option
+									id="org.eclipse.cdt.build.core.settings.holder.incpaths.2047893313"
+									superClass="org.eclipse.cdt.build.core.settings.holder.incpaths"
+									valueType="includePath">
+									<listOptionValue builtIn="false"
+										value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5" />
+									<listOptionValue builtIn="false"
+										value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux" />
+									<listOptionValue builtIn="false"
+										value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward" />
+									<listOptionValue builtIn="false"
+										value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include" />
+									<listOptionValue builtIn="false" value="/usr/local/include" />
+									<listOptionValue builtIn="false" value="/usr/include" />
+									<listOptionValue builtIn="false" value="../inc" />
+									<listOptionValue builtIn="false"
+										value="/opt/maxeler/maxcompiler/include/slic" />
 								</option>
-								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.756395105" languageId="org.eclipse.cdt.core.assembly" languageName="Assembly" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+								<inputType
+									id="org.eclipse.cdt.build.core.settings.holder.inType.756395105"
+									languageId="org.eclipse.cdt.core.assembly" languageName="Assembly"
+									sourceContentType="org.eclipse.cdt.core.asmSource"
+									superClass="org.eclipse.cdt.build.core.settings.holder.inType" />
 							</tool>
-							<tool id="org.eclipse.cdt.build.core.settings.holder.1913945468" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
-								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.426609757" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
-									<listOptionValue builtIn="false" value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
-									<listOptionValue builtIn="false" value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
-									<listOptionValue builtIn="false" value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
-									<listOptionValue builtIn="false" value="/usr/local/include"/>
-									<listOptionValue builtIn="false" value="/usr/include"/>
-									<listOptionValue builtIn="false" value="../inc"/>
-									<listOptionValue builtIn="false" value="/opt/maxeler/maxcompiler/include/slic"/>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.1913945468"
+								name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option
+									id="org.eclipse.cdt.build.core.settings.holder.incpaths.426609757"
+									superClass="org.eclipse.cdt.build.core.settings.holder.incpaths"
+									valueType="includePath">
+									<listOptionValue builtIn="false"
+										value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5" />
+									<listOptionValue builtIn="false"
+										value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux" />
+									<listOptionValue builtIn="false"
+										value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward" />
+									<listOptionValue builtIn="false"
+										value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include" />
+									<listOptionValue builtIn="false" value="/usr/local/include" />
+									<listOptionValue builtIn="false" value="/usr/include" />
+									<listOptionValue builtIn="false" value="../inc" />
+									<listOptionValue builtIn="false"
+										value="/opt/maxeler/maxcompiler/include/slic" />
 								</option>
-								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1517609755" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+								<inputType
+									id="org.eclipse.cdt.build.core.settings.holder.inType.1517609755"
+									languageId="org.eclipse.cdt.core.g++" languageName="GNU C++"
+									sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader"
+									superClass="org.eclipse.cdt.build.core.settings.holder.inType" />
 							</tool>
-							<tool id="org.eclipse.cdt.build.core.settings.holder.742379952" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
-								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.178322690" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5"/>
-									<listOptionValue builtIn="false" value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux"/>
-									<listOptionValue builtIn="false" value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward"/>
-									<listOptionValue builtIn="false" value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include"/>
-									<listOptionValue builtIn="false" value="/usr/local/include"/>
-									<listOptionValue builtIn="false" value="/usr/include"/>
-									<listOptionValue builtIn="false" value="../inc"/>
-									<listOptionValue builtIn="false" value="/opt/maxeler/maxcompiler/include/slic"/>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.742379952"
+								name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option
+									id="org.eclipse.cdt.build.core.settings.holder.incpaths.178322690"
+									superClass="org.eclipse.cdt.build.core.settings.holder.incpaths"
+									valueType="includePath">
+									<listOptionValue builtIn="false"
+										value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5" />
+									<listOptionValue builtIn="false"
+										value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/x86_64-redhat-linux" />
+									<listOptionValue builtIn="false"
+										value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../include/c++/4.8.5/backward" />
+									<listOptionValue builtIn="false"
+										value="/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include" />
+									<listOptionValue builtIn="false" value="/usr/local/include" />
+									<listOptionValue builtIn="false" value="/usr/include" />
+									<listOptionValue builtIn="false" value="../inc" />
+									<listOptionValue builtIn="false"
+										value="/opt/maxeler/maxcompiler/include/slic" />
 								</option>
-								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.605583254" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+								<inputType
+									id="org.eclipse.cdt.build.core.settings.holder.inType.605583254"
+									languageId="org.eclipse.cdt.core.gcc" languageName="GNU C"
+									sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader"
+									superClass="org.eclipse.cdt.build.core.settings.holder.inType" />
 							</tool>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="/DCTandIDCTCpuCode/src"/>
-						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="/DCTandIDCTCpuCode/inc"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath"
+							name="/DCTandIDCTCpuCode/src" />
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath"
+							name="/DCTandIDCTCpuCode/inc" />
 					</sourceEntries>
 				</configuration>
 			</storageModule>
-			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings" />
 		</cconfiguration>
 	</storageModule>
-	<storageModule moduleId="org.eclipse.cdt.core.pathentry"/>
+	<storageModule moduleId="org.eclipse.cdt.core.pathentry" />
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="DCTandIDCTCpuCode.null.259114223" name="DCTandIDCTCpuCode"/>
+		<project id="DCTandIDCTCpuCode.null.259114223" name="DCTandIDCTCpuCode" />
 	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
-		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<autodiscovery enabled="true" problemReportingEnabled="true"
+			selectedProfileId="" />
 		<scannerConfigBuildInfo instanceId="com.maxeler.configuration.DCTandIDCTCpuCode">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+			<autodiscovery enabled="true" problemReportingEnabled="true"
+				selectedProfileId="" />
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
 		<buildTargets>
-			<target name="build" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="build" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>build</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="build_sim" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="build_sim" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>build_sim</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="build_dfe" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="build_dfe" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>build_dfe</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="clean" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="clean" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>clean</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="copy_maxfile" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="copy_maxfile" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>copy_maxfile</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="copy_maxfile_dfe" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="copy_maxfile_dfe" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>copy_maxfile_dfe</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="copy_maxfile_sim" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="copy_maxfile_sim" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>copy_maxfile_sim</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="create_so" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="create_so" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>create_so</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="create_dfe_so" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="create_dfe_so" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>create_dfe_so</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="create_sim_so" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="create_sim_so" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>create_sim_so</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="help" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="help" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>help</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="restart_sim" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="restart_sim" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>restart_sim</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="run" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="run" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>run</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="run_dfe" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="run_dfe" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>run_dfe</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="run_sim" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="run_sim" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>run_sim</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="start_sim" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="start_sim" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>start_sim</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
 				<runAllBuilders>false</runAllBuilders>
 			</target>
-			<target name="stop_sim" path="" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+			<target name="stop_sim" path=""
+				targetID="org.eclipse.cdt.build.MakeTargetBuilder">
 				<buildCommand>make</buildCommand>
-				<buildArguments/>
+				<buildArguments />
 				<buildTarget>stop_sim</buildTarget>
 				<stopOnError>true</stopOnError>
 				<useDefaultCommand>false</useDefaultCommand>
@@ -220,5 +300,5 @@
 			</target>
 		</buildTargets>
 	</storageModule>
-	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders" />
 </cproject>
